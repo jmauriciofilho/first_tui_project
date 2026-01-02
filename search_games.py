@@ -17,6 +17,8 @@ class GameEntry(ListItem):
         yield Label(f"{self.title}  -  ⭐ {self.rating}")
 
 class GameSearchApp(App):
+    BINDINGS = [("q", "quit", "Sair")]
+    
     CSS_PATH = "search_games.tcss"
 
     def compose(self) -> ComposeResult:
