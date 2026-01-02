@@ -1,0 +1,16 @@
+#main-container {
+    align: center middle;
+    height: auto;
+    margin: 2 0;
+}
+#search-label { margin-bottom: 1; text-style: bold; color: $accent; }
+#search-input { width: 60%; }
+
+#results-container {
+    width: 60%;
+    height: 10;
+    border: solid $primary;
+    margin-top: 1;
+    display: none; /* Escondido até ter resultados */
+}
+#results-container.has-results { display: block; }
